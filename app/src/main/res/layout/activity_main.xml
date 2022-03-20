@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="330dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#C60649"
+        android:drawableLeft="@drawable/ic_google"
+        android:paddingLeft="50dp"
+        android:text="Sign in with Google"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGithub"
+        android:layout_width="330dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#77ABB1"
+        android:drawableLeft="@drawable/github"
+        android:text="Github"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
