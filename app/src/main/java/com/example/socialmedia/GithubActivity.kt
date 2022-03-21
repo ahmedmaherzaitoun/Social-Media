@@ -16,6 +16,7 @@ import com.google.firebase.auth.AuthResult
 
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.FirebaseUser
 
 
 class GithubActivity : AppCompatActivity() {
@@ -37,6 +38,7 @@ class GithubActivity : AppCompatActivity() {
         val scopes: ArrayList<String?> = object : ArrayList<String?>() {
             init {
                 add("user:email")
+
             }
         }
         provider.scopes = scopes
@@ -71,12 +73,15 @@ class GithubActivity : AppCompatActivity() {
                         val intent = Intent(this, InformationActivity::class.java)
 
                         // send github user name from MainActivity to HomePageActivity
-                        intent.putExtra("githubUserName", user.uid)
+                        intent.putExtra("githubUserName", user.displayName)
                         intent.putExtra("githubUserEmail", githubEmail.text.toString())
+                        Log.d("github", "username ${user.displayName}" )
+                        Log.d("github", "useremail ${user.email.toString()}" )
 
-                        this.startActivity(intent)
+                        startActivity(intent)
                         Toast.makeText(this, "Login Successfully", Toast.LENGTH_LONG).show()
 
+                        finish()
                     })
                 .addOnFailureListener(
                     OnFailureListener {

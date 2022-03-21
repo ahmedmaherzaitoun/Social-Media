@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#020000"
-    tools:context=".GithubActivity">
+    tools:context=".GithubActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-19dp">
 
     <EditText
         android:id="@+id/github_email"
         android:layout_width="305dp"
         android:layout_height="53dp"
         android:layout_marginTop="324dp"
-        android:background="#FFE9E9"
+        android:background="#B3D5E4"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.853"
@@ -28,7 +30,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="336dp"
         android:text="Email"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/github_email"
         app:layout_constraintHorizontal_bias="0.133"
@@ -37,13 +39,13 @@
 
     <Button
         android:id="@+id/btn_github_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#3F51B5"
-        android:text="github login"
+        android:layout_width="206dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#000000"
+        android:text=" login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/github_email" />
 

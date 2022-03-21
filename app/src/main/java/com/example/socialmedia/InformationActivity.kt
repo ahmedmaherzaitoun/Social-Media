@@ -52,10 +52,9 @@ class InformationActivity : AppCompatActivity() {
             strEmail = user?.email.toString()
             strUrl = user?.photoUrl.toString()
 
-            if( strEmail =="null") {
+            if( strEmail =="null" ){
                 strEmail = intent.getStringExtra("githubUserEmail")!!
             }
-            strName = intent.getStringExtra("githubUserName")!!
 
         }
 
